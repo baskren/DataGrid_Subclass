@@ -5,42 +5,10 @@
     xmlns:local="using:DataGrid"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    
-    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
-    xmlns:converters="using:CommunityToolkit.WinUI.UI.Converters"
-    
     mc:Ignorable="d"    
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="_grid">
-        <Grid.Resources>
-            <converters:StringFormatConverter x:Key="StringFormatConverter"/>
-            <DataTemplate x:Key="RowDetailsTemplate">
-                <StackPanel>
-                    <TextBlock Margin="20" Text="Here are the details for the selected mountain:" />
-                    <Grid Margin="20,10" Padding="5">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="Coordinates: " FontWeight="SemiBold" FontSize="13" />
-                        <TextBlock Grid.Row="1" Text="Prominence (m): " FontWeight="SemiBold" FontSize="13" />
-                        <TextBlock Grid.Row="2" Text="First Ascent (year): " FontWeight="SemiBold" FontSize="13" />
-                        <TextBlock Grid.Row="3" Text="No. of ascents: " FontWeight="SemiBold" FontSize="13" />
-                        <TextBlock Grid.Column="1" FontSize="13" Text="{Binding Coordinates}" HorizontalAlignment="Right" />
-                        <TextBlock Grid.Row="1" Grid.Column="1" FontSize="13" Text="{Binding Prominence}" HorizontalAlignment="Right" />
-                        <TextBlock Grid.Row="2" Grid.Column="1" FontSize="13" Text="{Binding First_ascent}" HorizontalAlignment="Right" />
-                        <TextBlock Grid.Row="3" Grid.Column="1" FontSize="13" Text="{Binding Ascents}" HorizontalAlignment="Right" />
-                    </Grid>
-                </StackPanel>
-            </DataTemplate>
-        </Grid.Resources>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
