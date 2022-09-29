@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"DataGrid.Windows (Package)": {
+			"commandName": "MsixPackage"
+		},
+		"DataGrid.Windows (Unpackaged)": {
+			"commandName": "Project"
+		}
+	}
+}
